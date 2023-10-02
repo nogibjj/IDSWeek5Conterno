@@ -7,7 +7,7 @@ class TestDatabaseFunctions(unittest.TestCase):
     def test_query(self):
         conn = sqlite3.connect("moviesDB.db")
         c = conn.cursor()
-        c.execute("INSERT INTO moviesDB (Film, Year) VALUES (?, ?)", ("Test Movie", 2020))
+        c.execute("INSERT INTO moviesDB (Film, Year) VALUES (?, ?)",("Test Movie",2020))
         conn.commit()
         conn.close()
 
@@ -17,7 +17,7 @@ class TestDatabaseFunctions(unittest.TestCase):
     def test_user_query(self):
         conn = sqlite3.connect("moviesDB.db")
         c = conn.cursor()
-        c.execute("INSERT INTO moviesDB (Film, Year) VALUES (?, ?)", ("Test Movie 2", 2021))
+        c.execute("INSERT INTO moviesDB (Film,Year) VALUES (?,?)",("Test Movie 2",2021))
         conn.commit()
         conn.close()
 
