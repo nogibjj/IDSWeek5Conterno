@@ -34,3 +34,5 @@ def user_query():
         print(f"An error occurred: {e.args[0]}")
     finally:
         conn.close()
+
+    return results
