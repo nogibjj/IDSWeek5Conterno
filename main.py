@@ -5,7 +5,6 @@ ETL-Query script
 from mylib.extract import extract
 from mylib.transform_load import load
 from mylib.query import query, user_query
-import fire
 # Extract
 print("Extracting data...")
 extract()
